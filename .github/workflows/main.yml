@@ -3,7 +3,7 @@ name: Run Nginx Docker Container
 on:
   push:
     branches:
-      - main
+      - master
  
 jobs:
   run-nginx:
