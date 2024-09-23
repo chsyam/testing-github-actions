@@ -14,5 +14,5 @@ jobs:
       - name: Pull Nginx Docker image
         run: docker pull nginx
  
-      - name: Run Nginx Docker contaer on port 8087
+      - name: Run Nginx Docker conter on port 8087
         run: docker run -d -p 8087:80 nginx
