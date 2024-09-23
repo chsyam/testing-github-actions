@@ -1,0 +1,18 @@
+name: Run Nginx Docker Container
+ 
+on:
+  push:
+    branches:
+      - main
+ 
+jobs:
+  run-nginx:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Pull Nginx Docker image
+        run: docker pull nginx
+ 
+      - name: Run Nginx Docker container on port 8087
+        run: docker run -d -p 8087:80 nginx
