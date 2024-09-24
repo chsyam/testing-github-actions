@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: regcred
-  namespace: ar
+  namespace: s3
 type: kubernetes.io/dockerconfigjson
 data:
   .dockerconfigjson: eyJhdXRocyI6eyJodHRwOi8vMTAuNjMuMjAuMzQ6ODAiOnsidXNlcm5hbWUiOiJ0Y3MiLCJwYXNzd29yZCI6InRjc0AxMjM0NSIsImF1dGgiOiJkR056T25SamMwQXhNak0wTlE9PSJ9fX0=
