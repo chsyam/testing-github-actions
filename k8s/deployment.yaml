@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: s3-application
+  namespace: s3
+  labels:
+    app: s3-application
+spec:
+  selector:
+    matchLabels:
+      app: s3-application
+  template:
+    metadata:
+      labels:
+        app: s3-application
+    spec:
+      containers:
+      - name: s3-application
+        image: 10.63.20.34:80/s3:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: regcred

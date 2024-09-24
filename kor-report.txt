@@ -1,0 +1,182 @@
+kor version: v0.5.5
+
+  _  _____  ____
+ | |/ / _ \|  _ \
+ | ' / | | | |_) |
+ | . \ |_| |  _ <
+ |_|\_\___/|_| \_\
+
+Unused resources in namespace: "devtron-cd"
++---+---------------+---------------------+
+| # | RESOURCE TYPE |    RESOURCE NAME    |
++---+---------------+---------------------+
+| 1 | Secret        | workflow-minio-cred |
++---+---------------+---------------------+
+
+Unused resources in namespace: "default"
++---+---------------+-------------------------------+
+| # | RESOURCE TYPE |         RESOURCE NAME         |
++---+---------------+-------------------------------+
+| 1 | Secret        | sky-ssh-keys                  |
+| 2 | Pvc           | data-postgresql-0             |
+| 3 | Service       | cluster-dbe4-head             |
+| 4 | Service       | cluster-dbe4-head-ssh         |
+| 5 | Service       | fastapi-app-service           |
+| 6 | Service       | sky-fa90-ubuntu-dbe4-head     |
+| 7 | Service       | sky-fa90-ubuntu-dbe4-head-ssh |
++---+---------------+-------------------------------+
+
+Unused resources in namespace: "grafana"
++---+---------------+-----------------------+
+| # | RESOURCE TYPE |     RESOURCE NAME     |
++---+---------------+-----------------------+
+| 1 | Service       | alertmanager          |
+| 2 | Service       | alertmanager-headless |
++---+---------------+-----------------------+
+
+Unused resources in namespace: "kepler"
++----+---------------+-------------------------+
+| #  | RESOURCE TYPE |      RESOURCE NAME      |
++----+---------------+-------------------------+
+|  1 | ReplicaSet    | grafana-58749dd8d4      |
+|  2 | ReplicaSet    | grafana-5b4d744944      |
+|  3 | ReplicaSet    | grafana-5cd779c8f7      |
+|  4 | ReplicaSet    | grafana-64784c6c5c      |
+|  5 | ReplicaSet    | grafana-687c7c7657      |
+|  6 | ReplicaSet    | grafana-6bcc5cdfb7      |
+|  7 | ReplicaSet    | grafana-6d9449f4cd      |
+|  8 | ReplicaSet    | grafana-77bb67b7c       |
+|  9 | ReplicaSet    | grafana-866c9c7785      |
+| 10 | ReplicaSet    | grafana-8c9ddd5c7       |
+| 11 | Pod           | grafana-d99f76889-tj8zh |
++----+---------------+-------------------------+
+
+Unused resources in namespace: "devtron-ci"
++---+---------------+---------------------+
+| # | RESOURCE TYPE |    RESOURCE NAME    |
++---+---------------+---------------------+
+| 1 | Secret        | workflow-minio-cred |
++---+---------------+---------------------+
+
+Unused resources in namespace: "remediation"
++---+---------------+---------------+
+| # | RESOURCE TYPE | RESOURCE NAME |
++---+---------------+---------------+
+| 1 | Pvc           | temp-pvc      |
++---+---------------+---------------+
+
+Unused resources in namespace: "kube-system"
++----+---------------+------------------------------+
+| #  | RESOURCE TYPE |        RESOURCE NAME         |
++----+---------------+------------------------------+
+|  1 | ConfigMap     | antrea-ca                    |
+|  2 | ConfigMap     | antrea-cluster-identity      |
+|  3 | ReplicaSet    | antrea-controller-547c559749 |
+|  4 | ReplicaSet    | antrea-controller-57cb586878 |
+|  5 | ReplicaSet    | antrea-controller-5b56948657 |
+|  6 | ReplicaSet    | antrea-controller-5c874f4f98 |
+|  7 | ReplicaSet    | antrea-controller-6866576f48 |
+|  8 | ReplicaSet    | antrea-controller-6b64fbdcfd |
+|  9 | ReplicaSet    | antrea-controller-6df78c4f46 |
+| 10 | ReplicaSet    | antrea-controller-7b586cf4b7 |
+| 11 | ReplicaSet    | antrea-controller-7fb8795794 |
+| 12 | ReplicaSet    | antrea-controller-d85747944  |
+| 13 | ReplicaSet    | coredns-64c9c579b5           |
+| 14 | ReplicaSet    | coredns-64f6888c9d           |
+| 15 | ReplicaSet    | coredns-668b47df79           |
+| 16 | ReplicaSet    | coredns-6f68fd494b           |
+| 17 | ReplicaSet    | coredns-787ccfbfd7           |
+| 18 | ReplicaSet    | coredns-799cbc86f9           |
+| 19 | ReplicaSet    | coredns-7b76cb5d5d           |
+| 20 | ReplicaSet    | coredns-7cdb8c445c           |
+| 21 | ReplicaSet    | coredns-8f747888c            |
+| 22 | ReplicaSet    | coredns-bdb5c6bd             |
++----+---------------+------------------------------+
+
+Unused resources in namespace: "database"
++---+---------------+----------------------------+
+| # | RESOURCE TYPE |       RESOURCE NAME        |
++---+---------------+----------------------------+
+| 1 | Pvc           | data-postgres-postgresql-0 |
++---+---------------+----------------------------+
+
+Unused resources in namespace: "metrics-server"
++---+---------------+---------------------------+
+| # | RESOURCE TYPE |       RESOURCE NAME       |
++---+---------------+---------------------------+
+| 1 | ReplicaSet    | metrics-server-8497df96c5 |
++---+---------------+---------------------------+
+
+Unused resources in namespace: "devtroncd"
++----+---------------+------------------------------------+
+| #  | RESOURCE TYPE |           RESOURCE NAME            |
++----+---------------+------------------------------------+
+|  1 | Job           | app-sync-cronjob-28775220          |
+|  2 | Job           | app-sync-cronjob-28776660          |
+|  3 | Job           | app-sync-job-nf2mz                 |
+|  4 | Job           | devtron-minio-make-bucket-job      |
+|  5 | Job           | postgresql-migrate-casbin-r2zko    |
+|  6 | Job           | postgresql-migrate-devtron-jx62p   |
+|  7 | Job           | postgresql-migrate-gitsensor-r80bl |
+|  8 | Job           | postgresql-migrate-lens-jlryg      |
+|  9 | Job           | postgresql-miscellaneous           |
+| 10 | ConfigMap     | argocd-cm                          |
+| 11 | ConfigMap     | devtron-operator-cm                |
+| 12 | ConfigMap     | devtron-ucid                       |
+| 13 | ConfigMap     | migrator-override-cm               |
+| 14 | Secret        | argocd-secret                      |
+| 15 | Secret        | devtron-operator-secret            |
+| 16 | ReplicaSet    | devtron-bc785fb4d                  |
+| 17 | ReplicaSet    | kubelink-6b658cd66c                |
++----+---------------+------------------------------------+
+
+Unused resources in namespace: "argo"
++---+---------------+-------------------------------+
+| # | RESOURCE TYPE |         RESOURCE NAME         |
++---+---------------+-------------------------------+
+| 1 | ConfigMap     | workflow-controller-configmap |
++---+---------------+-------------------------------+
+
+Unused resources in namespace: ""
++----+---------------+----------------------------------------+
+| #  | RESOURCE TYPE |             RESOURCE NAME              |
++----+---------------+----------------------------------------+
+|  1 | Pv            | demo-pv                                |
+|  2 | ClusterRole   | aggregate-antrea-clustergroups-edit    |
+|  3 | ClusterRole   | aggregate-antrea-clustergroups-view    |
+|  4 | ClusterRole   | aggregate-antrea-policies-edit         |
+|  5 | ClusterRole   | aggregate-antrea-policies-view         |
+|  6 | ClusterRole   | aggregate-traceflows-edit              |
+|  7 | ClusterRole   | aggregate-traceflows-view              |
+|  8 | ClusterRole   | antrea-cluster-identity-reader         |
+|  9 | ClusterRole   | argo-aggregate-to-admin                |
+| 10 | ClusterRole   | argo-aggregate-to-edit                 |
+| 11 | ClusterRole   | argo-aggregate-to-view                 |
+| 12 | Crd           | alertmanagers.monitoring.coreos.com    |
+| 13 | Crd           | bgppolicies.crd.antrea.io              |
+| 14 | Crd           | clustergroups.crd.antrea.io            |
+| 15 | Crd           | clusternetworkpolicies.crd.antrea.io   |
+| 16 | Crd           | clusterworkflowtemplates.argoproj.io   |
+| 17 | Crd           | cronworkflows.argoproj.io              |
+| 18 | Crd           | egresses.crd.antrea.io                 |
+| 19 | Crd           | externalentities.crd.antrea.io         |
+| 20 | Crd           | externalippools.crd.antrea.io          |
+| 21 | Crd           | externalnodes.crd.antrea.io            |
+| 22 | Crd           | groups.crd.antrea.io                   |
+| 23 | Crd           | ippools.crd.antrea.io                  |
+| 24 | Crd           | networkpolicies.crd.antrea.io          |
+| 25 | Crd           | nodelatencymonitors.crd.antrea.io      |
+| 26 | Crd           | prometheusagents.monitoring.coreos.com |
+| 27 | Crd           | prometheuses.monitoring.coreos.com     |
+| 28 | Crd           | prometheusrules.monitoring.coreos.com  |
+| 29 | Crd           | scrapeconfigs.monitoring.coreos.com    |
+| 30 | Crd           | supportbundlecollections.crd.antrea.io |
+| 31 | Crd           | traceflows.crd.antrea.io               |
+| 32 | Crd           | trafficcontrols.crd.antrea.io          |
+| 33 | Crd           | workflowartifactgctasks.argoproj.io    |
+| 34 | Crd           | workfloweventbindings.argoproj.io      |
+| 35 | Crd           | workflows.argoproj.io                  |
+| 36 | Crd           | workflowtaskresults.argoproj.io        |
+| 37 | Crd           | workflowtasksets.argoproj.io           |
+| 38 | Crd           | workflowtemplates.argoproj.io          |
++----+---------------+----------------------------------------+
