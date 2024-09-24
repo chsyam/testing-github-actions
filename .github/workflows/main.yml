@@ -11,9 +11,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - name: listing all files
+        run: ls
       - name: Login to docker registry
-        run: sudo docker login 10.63.20.34:80 -u tcs -p tcs@12345
-      - name: Pull Nginx Docker image
-        run: sudo docker pull 10.63.20.34:80/platform-ui:latest
+        # run: sudo docker login http://10.63.20.34:80 -u tcs -p tcs@12345
+      # - name: Pull Nginx Docker image
+        run: sudo docker pull ngnix
       - name: Run Nginx Docker conter on port 8087
         run: sudo docker run -d -p 8087:80 nginx
