@@ -1,4 +1,0 @@
- 10.63.20.34:80/platform-ui:latest
-
-         # run: sudo docker login http://10.63.20.34:80 -u tcs -p tcs@12345
-      # - name: Login to docker registry
