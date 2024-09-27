@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: "installing ngnix"
         run : docker pull nginx
-      - name: "running docker image"
+      - name: "running image"
         run: kubectl run nginx --image=nginx:latest
