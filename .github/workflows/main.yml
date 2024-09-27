@@ -9,7 +9,15 @@ jobs:
   run-nginx:
     runs-on: self-hosted
     steps:
-      - name: "installing ngnix"
-        run : sudo docker pull nginx
-      - name: "running image"
-        run: kubectl run nginx --image=nginx:latest
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: listing all files
+        run: ls
+      - name: Creating jar file
+        run: mvn clean install
+      - name: Building an image
+        run: sudo docker build -t 10.63.20.34:80/s3:latest . 
+      - name: Pushing the image to registry
+        run: sudo docker push 10.63.20.34:80/s3:latest
+      - name: Deploying on kubernetes
+        run: kubectl apply -f k8s/
