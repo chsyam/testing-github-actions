@@ -10,6 +10,6 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: "installing ngnix"
-        run : docker pull nginx
+        run : sudo docker pull nginx
       - name: "running image"
         run: kubectl run nginx --image=nginx:latest
